@@ -1,27 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: orders13
+  name: order-service-new
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: orders13
+      app: order-service-new
   template:
     metadata:
       labels:
-        app: orders13
+        app: order-service-new
     spec:
       containers:
-        - image: marafiievychmariia/orders14
-          name: orders13
+        - image: mariiamarafiievych/order-service-new
+          name: order-service-new
+          imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 8084
-              name: orders13
-          env:
-            - name: POSTGRES_ENDPOINT
-              value: "jdbc:postgresql://192.168.0.177:5434/"
-            - name: POSTGRES_PASSWORD
-              value: "password"
-            - name: POSTGRES_USERNAME
-              value: "postgres"
