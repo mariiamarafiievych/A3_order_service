@@ -14,8 +14,8 @@ message ProtoOrderedItem{
 
 message ProtoItem {
   string name = 1;
-  double price = 4;
-  int32 quantity = 5;
+  double price = 2;
+  int32 quantity = 3;
 }
 
 message ProtoCustomer {
