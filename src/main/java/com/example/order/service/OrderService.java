@@ -1,12 +1,12 @@
-package order.service;
+package com.example.order.service;
 
+import com.example.order.dto.Customer;
+import com.example.order.dto.ItemDTO;
+import com.example.order.repo.OrderItemRepository;
 import javassist.NotFoundException;
-import order.dto.Customer;
-import order.dto.ItemDTO;
-import order.entities.Order;
-import order.entities.OrderItem;
-import order.repo.OrderItemRepository;
-import order.repo.OrderRepository;
+import com.example.order.entities.Order;
+import com.example.order.entities.OrderItem;
+import com.example.order.repo.OrderRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
@@ -23,7 +23,7 @@ import java.util.UUID;
 
 @Service
 public class OrderService {
-
+    //supplier-service-new
     private static final String SUPPLIER_URL = "http://supplier-service-new:8082";
     private final RestTemplate restTemplate = new RestTemplate();
     private final HttpHeaders headers = new HttpHeaders();

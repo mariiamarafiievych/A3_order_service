@@ -1,12 +1,12 @@
-package order.controller;
+package com.example.order.controller.rest;
 
+import com.example.order.dto.Customer;
+import com.example.order.dto.ItemDTO;
+import com.example.order.service.OrderService;
 import javassist.NotFoundException;
-import order.dto.CreateOrderDTO;
-import order.dto.Customer;
-import order.dto.ItemDTO;
-import order.entities.Order;
-import order.entities.OrderItem;
-import order.service.OrderService;
+import com.example.order.dto.CreateOrderDTO;
+import com.example.order.entities.Order;
+import com.example.order.entities.OrderItem;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
