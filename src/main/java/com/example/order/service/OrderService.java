@@ -24,7 +24,7 @@ import java.util.UUID;
 @Service
 public class OrderService {
     //supplier-service-new
-    private static final String SUPPLIER_URL = "http://supplier-service-new:8082";
+    private static final String SUPPLIER_URL = "http://localhost:8082";
     private final RestTemplate restTemplate = new RestTemplate();
     private final HttpHeaders headers = new HttpHeaders();
     private final HttpEntity<Object> headersEntity = new HttpEntity<>(headers);
