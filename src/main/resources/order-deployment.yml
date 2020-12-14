@@ -13,11 +13,11 @@ spec:
         app: order-service-new
     spec:
       containers:
-        - image: mariiamarafiievych/order-service-new
+        -
+          image: mariiamarafiievych/order-service-new
           name: order-service-new
-          imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 8084
-                name: rest
+              name: rest
             - containerPort: 9094
-                 name: grpc
+              name: grpc

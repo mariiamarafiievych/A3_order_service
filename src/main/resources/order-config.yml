@@ -9,7 +9,7 @@ spec:
       port: 8084
       targetPort: 8084
     - name: grpc
-        port: 9094
-        targetPort: 9094
+      port: 9094
+      targetPort: 9094
   selector:
     app: order-service-new
